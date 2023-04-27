@@ -80,15 +80,20 @@ const LandingSection = () => {
         </Animate>
         <div className={styles.button_container}>
           <Animate customIndex={3}>
-            <button className={styles.button}>
+            <a
+              className={styles.button}
+              href="https://estimator.alliance.terra.money/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/Images/Calc.svg" alt="Calculator" width={16} height={16} />
               Estimator
-            </button>
+            </a>
           </Animate>
           <Animate customIndex={4}>
             <a
               className={styles.button}
-              href="https://alliance.terra.money/"
+              href="https://docs.alliance.terra.money/"
               target="_blank"
               rel="noopener noreferrer"
             >
