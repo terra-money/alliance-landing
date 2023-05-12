@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { motion, useScroll } from 'framer-motion';
-import Animate from 'components/Motion/Animate';
 import styles from "styles/LandingSection.module.scss"
 
 const LandingSection = () => {
