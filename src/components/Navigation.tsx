@@ -22,8 +22,6 @@ const Navigation = () => {
             src="/Images/AllianceLogo.svg"
             className={styles.logo}
             alt="Logo"
-            width={40}
-            height={40}
           />
           <h3>Alliance</h3>
         </a>
