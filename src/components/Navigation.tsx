@@ -19,7 +19,7 @@ const Navigation = () => {
           href="/"
         >
           <img
-            src="/Images/Logo.svg"
+            src="/Images/AllianceLogo.svg"
             className={styles.logo}
             alt="Logo"
             width={40}
