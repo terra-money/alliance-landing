@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Animate = ({ children, customIndex }: { children: any, customIndex: any }) => {
+const Animate = ({ children, customIndex, className }: { children: any, customIndex: any, className?: any }) => {
   const variants = {
     default: {
       x: -1000,
@@ -25,6 +25,7 @@ const Animate = ({ children, customIndex }: { children: any, customIndex: any })
       variants={variants}
       viewport={{ once: false }}
       custom={customIndex}
+      className={className}
     >
       {children}
     </motion.div>

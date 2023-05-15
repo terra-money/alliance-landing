@@ -11,7 +11,7 @@
 <ellipse cx="103.983" cy="83.1945" rx="313" ry="57" transform="rotate(15.2246 103.983 83.1945)" fill="#23BED9"/>
 </g>
 <g filter="url(#filter1_f_77_112)">
-<ellipse cx="502.771" cy="494.124" rx="342.127" ry="218.588" transform="rotate(44.0659 502.771 494.124)" fill="#F15E7E"/>
+<ellipse cx="502.771" cy="494.124" rx="342.127" ry="218.588" transform="rotate(44.0659 502.771 494.124)" fill="rgb(0, 216, 193)"/>
 </g>
 <g filter="url(#filter2_f_77_112)">
 <ellipse cx="439.077" cy="285.174" rx="467.917" ry="210.817" transform="rotate(-36.9676 439.077 285.174)" fill="url(#paint5_radial_77_112)" fill-opacity="0.4"/>
@@ -54,10 +54,10 @@
 <stop offset="1" stop-color="#1F1D28" stop-opacity="0"/>
 </linearGradient>
 <radialGradient id="paint5_radial_77_112" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(511.977 305.034) rotate(26.296) scale(293.111 233.821)">
-<stop stop-color="#2B1867"/>
-<stop offset="0.487063" stop-color="#382383"/>
-<stop offset="0.781641" stop-color="#452896"/>
-<stop offset="1" stop-color="#76248E"/>
+<stop stop-color="rgb(0, 216, 193)"/>
+<stop offset="0.487063" stop-color="rgb(2, 172, 210)"/>
+<stop offset="0.781641" stop-color="rgb(0, 213, 237)"/>
+<stop offset="1" stop-color="rgb(0, 213, 237)"/>
 </radialGradient>
 </defs>
 </svg>

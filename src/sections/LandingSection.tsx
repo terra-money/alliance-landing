@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { motion, useScroll } from 'framer-motion';
-import Animate from 'components/Motion/Animate';
 import styles from "styles/LandingSection.module.scss"
 
 const LandingSection = () => {
@@ -52,56 +51,70 @@ const LandingSection = () => {
         viewport={{ once: false }}
       >
         <div>
-          <Animate customIndex={0}>
+          <motion.div
+            variants={fadeInVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: false }}
+          >
             <h1>
-              Grow
+              Collaborate.
             </h1>
-          </Animate>
-          <Animate customIndex={0}>
             <h1>
-              blockchains
+              Reward.
             </h1>
-          </Animate>
-          <Animate customIndex={0}>
             <h1>
-              easier
+              Grow.
             </h1>
-          </Animate>
+
+          </motion.div>
         </div>
-        <Animate customIndex={1}>
+        <motion.div
+          variants={fadeInVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: false }}
+        >
           <h6>
             Alliance allows blockchains to trade yield with each other.
           </h6>
-        </Animate>
-        <Animate customIndex={2}>
+        </motion.div>
+        <motion.div
+          variants={fadeInVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: false }}
+        >
           <p>
-            Alliance is an open-source Cosmos SDK module that leverages interchain staking to form economic alliances among blockchains. By boosting the economic activity across Cosmos chains through creating bilateral, mutually beneficial alliances, Alliance aims to give rise to a new wave of innovation, user adoption, and cross-chain collaboration.
+            Alliance is an open-source Cosmos SDK module that leverages interchain staking to form economic alliances among blockchains. By allowing multiple tokens to be staked on a single chain, earning native staking rewards, Alliance opens up a range of use cases that strengthen decentralized economies, including attracting users, liquidity, and developers, deepening liquidity for essential token pairs, incentivizing native application development, and diversifying or augmenting staking yield.
           </p>
-        </Animate>
-        <div className={styles.button_container}>
-          <Animate customIndex={3}>
-            <a
-              className={styles.button}
-              href="https://estimator.alliance.terra.money/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/Images/Calc.svg" alt="Calculator" width={16} height={16} />
-              Estimator
-            </a>
-          </Animate>
-          <Animate customIndex={4}>
-            <a
-              className={styles.button}
-              href="https://docs.alliance.terra.money/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/Images/Docs.svg" alt="Calculator" width={16} height={16} />
-              Docs
-            </a>
-          </Animate>
-        </div>
+        </motion.div>
+        <motion.div
+          className={styles.button_container}
+          variants={fadeInVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: false }}
+        >
+          <a
+            className={styles.button}
+            href="https://estimator.alliance.terra.money/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/Images/Calc.svg" alt="Calculator" width={16} height={16} />
+            Estimator
+          </a>
+          <a
+            className={styles.button}
+            href="https://docs.alliance.terra.money/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/Images/Docs.svg" alt="Calculator" width={16} height={16} />
+            Docs
+          </a>
+        </motion.div>
       </motion.div>
 
       <div className={styles.blob_1} />
@@ -125,7 +138,7 @@ const LandingSection = () => {
         initial="initial"
         whileInView="animate"
         viewport={{ once: false }}
-        custom={1}
+        custom={0.5}
         src="/Images/AllianceLogoOutline.svg"
         alt="Alliance Logo"
         className={styles.alliance_outline}
