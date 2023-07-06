@@ -114,6 +114,20 @@ const LandingSection = () => {
             <img src="/Images/Docs.svg" alt="Calculator" width={16} height={16} />
             Docs
           </a>
+          <a
+            className={styles.button}
+            href="https://alliance-dashboard.terra.money/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/Images/Chart.svg"
+              alt="Dashboard"
+              width={16}
+              height={16}
+            />
+            Dashboard
+          </a>
         </motion.div>
       </motion.div>
 
