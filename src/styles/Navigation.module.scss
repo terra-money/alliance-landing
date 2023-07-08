@@ -102,6 +102,12 @@
         height: 14px;
       }
 
+      @media screen and (max-width: 500px) {
+        span {
+          display: none;
+        }
+      }
+
       &:hover {
         background: hsla(245, 97%, 62%, 25%);
         border: 1px solid var(--accent-color);

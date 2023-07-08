@@ -73,11 +73,19 @@
     padding: 0 2vmax;
 
     .text_container {
-      margin-top: 2rem;
-      gap: 1rem;
+      margin-top: 3rem;
+      gap: 1.5rem;
 
       h1 {
-        font-size: 48px;
+        font-size: 42px;
+      }
+
+      h6 {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 12px;
       }
     }
   }
@@ -88,6 +96,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
+    flex-wrap: wrap;
 
     .button {
       display: flex;
@@ -149,6 +158,14 @@
 
       .button {
         background-image: linear-gradient(90deg,#228bbc,#002c81);
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .button {
+        min-width: 120px;
+        padding: 12px 28px;
+        font-size: 14px;
       }
     }
   }
