@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react';
 import { motion, useScroll } from 'framer-motion';
+import { useMediaQuery } from 'usehooks-ts';
 import { chains } from './integrationsData';
 import styles from "styles/LandingSection.module.scss"
+import classNames from 'classnames/bind';
+
+const cx = classNames.bind(styles);
 
 const LandingSection = () => {
   const { scrollY } = useScroll() as any;
   const [northScrollY, setNorthScrollY] = useState(false);
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   useEffect(() => {
     scrollY.onChange(() => {
@@ -144,7 +149,7 @@ const LandingSection = () => {
         width={800}
       />
 
-      <div className={styles.integrations}>
+      <div className={cx(styles.integrations, { isMobile })}>
         <h3>
           Integrations & Staking Partners
         </h3>
@@ -161,8 +166,8 @@ const LandingSection = () => {
                 src={chain.logo}
                 alt={chain.name}
                 style={{
-                  width: chain.sizeOverride || '32px',
-                  height: chain.sizeOverride || '32px',
+                  width: chain.sizeOverride || '28px',
+                  height: chain.sizeOverride || '28px',
                   margin: chain.sizeOverride ? '0 -6px' : '0px',
                 }}
               />

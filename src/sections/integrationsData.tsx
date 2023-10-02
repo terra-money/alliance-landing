@@ -24,7 +24,7 @@ const chains = [
     name: 'Carbon',
     logo: '/Images/Integrations/CarbonLogo.svg',
     link: 'https://carbon.network',
-    sizeOverride: '42px',
+    sizeOverride: '38px',
   },
   {
     name: 'Backbone Labs',
@@ -35,7 +35,7 @@ const chains = [
     name: 'Chihuahua',
     logo: '/Images/Integrations/ChihuahuaLogo.svg',
     link: 'https://www.chihuahua.wtf/',
-    sizeOverride: '42px',
+    sizeOverride: '38px',
   },
 ];
 
