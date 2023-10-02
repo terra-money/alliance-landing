@@ -4,11 +4,13 @@
   align-items: flex-start;
   justify-content: center;
   height: 100vh;
+  min-height: 700px;
   width: 100%;
   padding: 0 10vmax;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
   .text_container {
     display: flex;
@@ -77,7 +79,7 @@
       gap: 1.5rem;
 
       h1 {
-        font-size: 42px;
+        font-size: 36px;
       }
 
       h6 {
@@ -86,6 +88,18 @@
 
       p {
         font-size: 12px;
+      }
+    }
+  }
+
+  @media screen and (max-height: 667px) {
+    .text_container {
+      h6 {
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 10px;
       }
     }
   }
@@ -113,7 +127,7 @@
       padding: 14px 36px;
       font-family: Gotham,sans-serif;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 21px;
       transition: all .2s;
 
@@ -164,9 +178,19 @@
     @media screen and (max-width: 500px) {
       .button {
         min-width: 120px;
-        padding: 12px 28px;
-        font-size: 14px;
+        // padding: 12px 28px;
+        padding: 10px 14px;
+        font-size: 12px;
       }
+    }
+
+    @media screen and (max-height: 667px) {
+      .button {
+        padding: 8px 10px;
+        font-size: 11px;
+        min-width: unset;
+      }
+      margin-top: 0;
     }
   }
 
@@ -355,5 +379,59 @@
 
     background: #111c1c;
     filter: blur(210px);
+  }
+
+  .integrations {
+    position: absolute;
+    bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #8f929e;
+      letter-spacing: 0.05px;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      .icon_only {
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    @media screen and (max-height: 850px) {
+      bottom: -112px;
+    }
+
+    @media screen and (max-width: 300px) {
+      h3 {
+        font-size: 14px;
+      }
+      .icons {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .isMobile {
+    position: relative;
+    bottom: 0;
+    margin-top: 48px;
+    gap: 8px;
+
+    @media screen and (max-height: 700px) {
+      gap: 4px;
+      margin-top: 28px;
+    }
   }
 }

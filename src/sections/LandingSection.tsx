@@ -1,10 +1,16 @@
 import { useEffect, useState } from 'react';
 import { motion, useScroll } from 'framer-motion';
+import { useMediaQuery } from 'usehooks-ts';
+import { chains } from './integrationsData';
 import styles from "styles/LandingSection.module.scss"
+import classNames from 'classnames/bind';
+
+const cx = classNames.bind(styles);
 
 const LandingSection = () => {
   const { scrollY } = useScroll() as any;
   const [northScrollY, setNorthScrollY] = useState(false);
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   useEffect(() => {
     scrollY.onChange(() => {
@@ -86,7 +92,7 @@ const LandingSection = () => {
           viewport={{ once: false }}
         >
           <p>
-            Alliance is an open-source Cosmos SDK module that leverages interchain staking to form economic alliances among blockchains. By allowing multiple tokens to be staked on a single chain, earning native staking rewards, Alliance opens up a range of use cases that strengthen decentralized economies, including attracting users, liquidity, and developers, deepening liquidity for essential token pairs, incentivizing native application development, and diversifying or augmenting staking yield.
+            Alliance is an open-source Cosmos SDK module that leverages interchain staking to form economic alliances among blockchains. Liquid Staking Tokens (LSTs) are moved from a larger, more liquid chain to a newer chain, and the cash flows from the LSTs cycle domestically, along with new users and assets coming with it. Uncorrelated, higher liquidity, lower volatility cash flows from other ecosystems can be used to augment and diversify the staking yield for the native coin – making it a more interesting coin to hold and stake. Simultaneously, holders of allied coins have more avenues to boost their yield – providing utility to the allied coins.
           </p>
         </motion.div>
         <motion.div
@@ -98,35 +104,19 @@ const LandingSection = () => {
         >
           <a
             className={styles.button}
-            href="https://estimator.alliance.terra.money/"
+            href="https://twitter.com/terra_money/status/1695426843787305313"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/Images/Calc.svg" alt="Calculator" width={16} height={16} />
-            Estimator
+            Stake Alliance assets
           </a>
           <a
             className={styles.button}
-            href="https://docs.alliance.terra.money/"
+            href="https://docs.alliance.terra.money/overview/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/Images/Docs.svg" alt="Calculator" width={16} height={16} />
-            Docs
-          </a>
-          <a
-            className={styles.button}
-            href="https://alliance-dashboard.terra.money/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/Images/Chart.svg"
-              alt="Dashboard"
-              width={16}
-              height={16}
-            />
-            Dashboard
+            Learn more
           </a>
         </motion.div>
       </motion.div>
@@ -158,6 +148,33 @@ const LandingSection = () => {
         className={styles.alliance_outline}
         width={800}
       />
+
+      <div className={cx(styles.integrations, { isMobile })}>
+        <h3>
+          Integrations & Staking Partners
+        </h3>
+        <div className={styles.icons}>
+          {chains.map((chain, index) => (
+            <a
+              key={index}
+              href={chain.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.icon_only}
+            >
+              <img
+                src={chain.logo}
+                alt={chain.name}
+                style={{
+                  width: chain.sizeOverride || '28px',
+                  height: chain.sizeOverride || '28px',
+                  margin: chain.sizeOverride ? '0 -6px' : '0px',
+                }}
+              />
+            </a>
+          ))}
+        </div>
+      </div>
     </section>
   )
 };
