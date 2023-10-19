@@ -63,6 +63,15 @@ const MobileNavigation = forwardRef<
           </h3>
           <h2 className={styles.menu_heading}>
             <a
+              href='https://alliance-dashboard.terra.money/'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dashboard
+            </a>
+          </h2>
+          <h2 className={styles.menu_heading}>
+            <a
               href='https://estimator.alliance.terra.money/'
               target="_blank"
               rel="noopener noreferrer"
