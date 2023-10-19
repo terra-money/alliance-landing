@@ -45,6 +45,13 @@ const Navigation = (
       <div className={styles.button_container}>
         <div className={styles.non_button_links}>
           <a
+            href='https://alliance-dashboard.terra.money/'
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dashboard
+          </a>
+          <a
             href='https://estimator.alliance.terra.money/'
             target="_blank"
             rel="noopener noreferrer"
