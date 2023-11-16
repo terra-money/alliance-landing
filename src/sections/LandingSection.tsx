@@ -92,7 +92,7 @@ const LandingSection = () => {
           viewport={{ once: false }}
         >
           <p>
-            Alliance is an open-source Cosmos SDK module that enables blockchains to form mutually beneficial relationships that strengthen their economy, similar to trade agreements between countries. Using Alliance, a chain can allow almost any token, including liquid staking tokens, stablecoins, liquidity provider tokens, and other Cosmos assets, to be staked on their chain to earn staking rewards. In turn for providing a portion of the chain’s staking rewards to stakers of these tokens, the chain can redistribute a percentage of these staked Alliance assets to native token stakers.
+            Alliance is an open-source Cosmos SDK module that enables blockchains to form mutually beneficial relationships, similar to trade agreements between countries. Using Alliance, a chain can allow almost any token, including liquid staking tokens, stablecoins, liquidity provider tokens, and other Cosmos assets, to be staked on their chain to earn staking rewards. In turn for providing a portion of the chain’s staking rewards to stakers of these tokens, the chain can redistribute a percentage of these staked Alliance assets to native token stakers.
           </p>
         </motion.div>
         <motion.div
