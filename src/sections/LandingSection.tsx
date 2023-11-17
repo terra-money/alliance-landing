@@ -92,7 +92,7 @@ const LandingSection = () => {
           viewport={{ once: false }}
         >
           <p>
-            Alliance is an open-source Cosmos SDK module that leverages interchain staking to form economic alliances among blockchains. Liquid Staking Tokens (LSTs) are moved from a larger, more liquid chain to a newer chain, and the cash flows from the LSTs cycle domestically, along with new users and assets coming with it. Uncorrelated, higher liquidity, lower volatility cash flows from other ecosystems can be used to augment and diversify the staking yield for the native coin – making it a more interesting coin to hold and stake. Simultaneously, holders of allied coins have more avenues to boost their yield – providing utility to the allied coins.
+            Alliance is an open-source Cosmos SDK module that enables blockchains to form mutually beneficial relationships, similar to trade agreements between countries. Using Alliance, a chain can allow almost any token, including liquid staking tokens, stablecoins, liquidity provider tokens, and other Cosmos assets, to be staked on their chain to earn staking rewards. In turn for providing a portion of the chain’s staking rewards to stakers of these tokens, the chain can redistribute a percentage of these staked Alliance assets to native token stakers.
           </p>
         </motion.div>
         <motion.div
@@ -151,7 +151,7 @@ const LandingSection = () => {
 
       <div className={cx(styles.integrations, { isMobile })}>
         <h3>
-          Integrations & Staking Partners
+          Integrations & Partners
         </h3>
         <div className={styles.icons}>
           {chains.map((chain, index) => (
