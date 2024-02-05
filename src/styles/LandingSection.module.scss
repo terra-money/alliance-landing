@@ -6,11 +6,63 @@
   height: 100vh;
   min-height: 700px;
   width: 100%;
-  padding: 0 10vmax;
+  padding: 0 5vmax;
   text-align: center;
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 96px;
+
+    .video__responsive {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-top: 148px;
+      flex: 2;
+      max-width: 800px;
+
+      iframe {
+        border: 2px solid var(--border-color);
+        border-radius: 8px;
+        // filter: drop-shadow(0px 20px 20px hsl(230, 9%, 7%));
+        filter: drop-shadow(0px 20px 20px hsla(230, 9%, 7%, 1));
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto 560 / 315;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      gap: 48px;
+    }
+
+    @media screen and (max-width: 1100px) {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 2rem;
+
+      .video__responsive {
+        margin-top: 0;
+        justify-content: flex-start;
+
+        iframe {
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+  }
 
   .text_container {
     display: flex;
@@ -18,7 +70,9 @@
     justify-content: center;
     gap: 2.5rem;
     max-width: 600px;
+    min-width: 500px;
     z-index: 100;
+    flex: 1;
 
     h1 {
       font-size: 72px;
@@ -64,18 +118,33 @@
   @media screen and (max-height: 900px) {
     .text_container {
       gap: 2rem;
+      margin-top: 300px;
 
       h1 {
-        font-size: 58px;
+        font-size: 48px;
       }
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 540px) {
     padding: 0 2vmax;
 
+    .container {
+
+      .video__responsive {
+        margin-top: 0;
+        justify-content: flex-start;
+
+        iframe {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
     .text_container {
-      margin-top: 3rem;
+      min-width: unset;
+      margin-top: 10rem;
       gap: 1.5rem;
 
       h1 {

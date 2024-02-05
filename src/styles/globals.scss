@@ -33,6 +33,9 @@
   line-height: 120%;
   color: var(--font-color);
   font-family: "Gotham";
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 html,

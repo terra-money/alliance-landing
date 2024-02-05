@@ -79,11 +79,11 @@ const Navigation = (
         </div>
         <a
           className={styles.terra_link}
-          href='https://docs.alliance.terra.money/guides/get-started/'
+          href='https://docs.alliance.terra.money/overview/'
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>Integrate Alliance</span>
+          <span>Learn more</span>
         </a>
       </div>
     </motion.nav>
