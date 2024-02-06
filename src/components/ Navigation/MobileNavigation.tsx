@@ -90,6 +90,15 @@ const MobileNavigation = forwardRef<
           </h2>
           <h2 className={styles.menu_heading}>
             <a
+              href='https://forms.gle/mWSKNN6MznpEpW5f8'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get in Touch
+            </a>
+          </h2>
+          <h2 className={styles.menu_heading}>
+            <a
               className={styles.terra_link}
               href='https://docs.alliance.terra.money/guides/get-started/'
               target="_blank"

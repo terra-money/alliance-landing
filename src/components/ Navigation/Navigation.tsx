@@ -66,6 +66,13 @@ const Navigation = (
             Docs
           </a>
           <a
+            href='https://forms.gle/mWSKNN6MznpEpW5f8'
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get in Touch
+          </a>
+          <a
             href='https://discord.com/invite/terra-money'
             target="_blank"
             rel="noopener noreferrer"
@@ -79,11 +86,11 @@ const Navigation = (
         </div>
         <a
           className={styles.terra_link}
-          href='https://docs.alliance.terra.money/guides/get-started/'
+          href='https://docs.alliance.terra.money/overview/'
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>Integrate Alliance</span>
+          <span>Learn more</span>
         </a>
       </div>
     </motion.nav>
