@@ -66,6 +66,13 @@ const Navigation = (
             Docs
           </a>
           <a
+            href='https://forms.gle/mWSKNN6MznpEpW5f8'
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get in Touch
+          </a>
+          <a
             href='https://discord.com/invite/terra-money'
             target="_blank"
             rel="noopener noreferrer"
