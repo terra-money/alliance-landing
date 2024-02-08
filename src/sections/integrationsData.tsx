@@ -37,6 +37,11 @@ const chains = [
     link: 'https://www.chihuahua.wtf/',
     sizeOverride: '38px',
   },
+  {
+    name: 'Persistence',
+    logo: '/Images/Integrations/PersistenceLogo.png',
+    link: "https://persistence.one/"
+  }
 ];
 
 export { chains };
