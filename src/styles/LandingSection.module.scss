@@ -506,6 +506,11 @@
           img {
             width: 22px !important;
             height: 22px !important;
+
+            &.size__override {
+              width: 32px !important;
+              height: 32px !important;
+            }
           }
         }
       }

@@ -160,6 +160,7 @@ const LandingSection = () => {
                   <img
                     src={chain.logo}
                     alt={chain.name}
+                    className={cx({ [styles.size__override]: chain.sizeOverride })}
                     style={{
                       width: chain.sizeOverride || '28px',
                       height: chain.sizeOverride || '28px',
